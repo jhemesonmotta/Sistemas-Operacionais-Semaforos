@@ -19,7 +19,7 @@ int main(){
         exit(0);
 	}
 
-    puts("O carro %d está saindo!", getpid());	
+    printf("O carro %d está saindo!", getpid());	
     semop(sem, &V, 1);
-    puts("O carro %d saiu!", getpid());
+    printf("O carro %d saiu!", getpid());
 }
